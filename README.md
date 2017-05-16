@@ -2,6 +2,9 @@
 This repo contains the scripts required to build
 [python-cassandra-driver](https://hub.docker.com/r/intezer/python-cassandra-driver/) image.
 
+The image consists of datastax's cassandra [python driver](http://datastax.github.io/python-driver/index.html)
+on top of docker's official [python image](https://hub.docker.com/_/python/).
+
 # Supported tags
 Tag has two formats:
 1. *{python-image-tag}*-*{driver-version}*
@@ -24,7 +27,7 @@ The full python tags list can be found [here](https://github.com/intezer/python-
 The full driver tags list can be found [here](https://github.com/intezer/python-cassandra-driver/blob/master/driver-versions.txt).
 
 # Migrating to the image
-The image aim to be a drop-in replacement for the [python](https://hub.docker.com/_/python/) image so every every
+The image aim to be a drop-in replacement for the [python](https://hub.docker.com/_/python/) image so every
 python tag has an equivalent same tag. If you are using the latest version, all you need to do is the change the `FROM` statement.
 
 # Notes
